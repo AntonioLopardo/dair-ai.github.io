@@ -6,7 +6,7 @@ modified:
 comments: true
 tags: ""
 image:
-  thumb: BART_Board_cropped_more.jpg
+  thumb: BART_Board_even_more_cropped.jpg
 ---
 <script type="text/javascript" async
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
@@ -112,10 +112,13 @@ After the comparative experiment, the authors trained a 12 layered, transformer-
 BART performs best in abstractive summarization tasks especially in the **XSum** benchmark that contains very few examples of summaries where phrases are present both in the summary and the original text. Besides surpassing the previous best systems in summarization by a considerable margin, BART does well also in natural language inference (NLI) tasks and QA, where it is on par with SOTA results.
 
 ### **Qualitative Analysis**
-The paper also features examples of the summaries produced by BART that can really give a sense of how well it does on the XSum dataset:
+The paper also features examples of summaries of WikiNews articles produced by a version of BART fine-tuned on the XSum dataset:
 
 \\
 ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FAntonioLprd%2F7kziiycrsc.png?alt=media&token=a6812c61-8d4b-4f0b-ac0c-e36c470dad45)
+
+\\
+From these examples BART appears capable of producing coherent, grammatical sentences that capture the sense of the text it should summarize. It highlights names and places why ignoring other details like dates and figures.
 
 \\
 If you want to summarize some text of your own we have set up a [Google Colab notebook](https://colab.research.google.com/drive/1ufNmxZz3v8LloGAYFJvTM2Git2aNe83R?usp=sharing) using the Hugging Face library.
